@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
     'api.apps.ApiConfig',
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
@@ -81,6 +82,12 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+#REST_FRAMEWORK = {
+ #   'DEFAULT_PERMISSION_CLASSES': {
+  #      'rest_framework.permission.IsAuthenticated',
+   # }
+#}
 
 
 # Password validation
